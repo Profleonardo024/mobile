@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        @media (max-width:700px) {
+            body{
+                background-color: rgb(103, 10, 139);/*COR DE FUNDO*/
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            main{
+                width: 100%; /*LARGURA EM 100%*/
+                display: flex;/*LARGURA FLEXIVEL*/
+                flex-wrap:wrap;/*Corte de largura em coluna*/
+                transform: translateY(120px); /*Movimento eixo Y*/
+            }
+            div{
+                width: 100%; /*LARGURA EM 100%*/
+                display: flex;/*LARGURA FLEXIVEL*/
+                flex-wrap:wrap;/*Corte de largura em coluna*/
+                justify-content: center;/*Alinhamento horizontal*/
+                align-items: center;/*Alinhamento vertical*/
+                background-color: rgb(53, 7, 71);
+                padding: 10px;
+                border-radius: 20px;
+            }
+            input{
+                width: 90%;
+                font-size:20px;
+                padding: 10px;
+                margin-top: 25px;
+            }
+            p{
+                color: white;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            input:hover{
+               
+            }
+
+            input:active{
+
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                color: black;
+                font-size: 30px;
+                font-style: normal;
+                text-decoration: none;
+                background-color: rgb(160, 245, 2);
+                padding: 10px;
+                width: 45%;
+                font-weight: bold;
+                transition: 2s ease;
+                margin-top: 25px;
+            }
+            a:hover{
+                background-color: rgb(103, 10, 139);
+                color: white;
+                border: 2px solid  rgb(160, 245, 2);
+            }
+            input::placeholder{
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.473);
+                font-weight: bold;
+            }
+
+        }
+
+
+    </style>
+
+    <main>
+        <div>
+            <p>Faça o seu Cadastro !</p>
+            <input type="text" placeholder="Seu Nome">
+            <input type="text" placeholder="Seu Email">
+            <input type="number" placeholder="Seu Telefone">
+            <a href="">Entrar</a>
+        </div>
+
+
+
+      
+    </main>
+    
+</body>
+</html>
